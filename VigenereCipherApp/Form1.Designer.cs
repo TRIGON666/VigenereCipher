@@ -38,6 +38,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnHack = new System.Windows.Forms.Button();
+            this.txtMaybeKey = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtHacTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtInput
@@ -129,11 +134,62 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Язык:";
             // 
+            // btnHack
+            // 
+            this.btnHack.Location = new System.Drawing.Point(315, 415);
+            this.btnHack.Name = "btnHack";
+            this.btnHack.Size = new System.Drawing.Size(144, 23);
+            this.btnHack.TabIndex = 10;
+            this.btnHack.Text = "Взломать";
+            this.btnHack.UseVisualStyleBackColor = true;
+            this.btnHack.Click += new System.EventHandler(this.btnHack_Click);
+            // 
+            // txtMaybeKey
+            // 
+            this.txtMaybeKey.Location = new System.Drawing.Point(562, 55);
+            this.txtMaybeKey.Multiline = true;
+            this.txtMaybeKey.Name = "txtMaybeKey";
+            this.txtMaybeKey.Size = new System.Drawing.Size(134, 25);
+            this.txtMaybeKey.TabIndex = 11;
+            this.txtMaybeKey.TextChanged += new System.EventHandler(this.txtMaybeKey_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(562, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(99, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Возможный ключ:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(562, 88);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Взломанный текст:";
+            // 
+            // txtHacTxt
+            // 
+            this.txtHacTxt.Location = new System.Drawing.Point(562, 104);
+            this.txtHacTxt.Multiline = true;
+            this.txtHacTxt.Name = "txtHacTxt";
+            this.txtHacTxt.Size = new System.Drawing.Size(404, 134);
+            this.txtHacTxt.TabIndex = 13;
+            this.txtHacTxt.TextChanged += new System.EventHandler(this.txtHacTxt_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 450);
+            this.ClientSize = new System.Drawing.Size(1116, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtHacTxt);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtMaybeKey);
+            this.Controls.Add(this.btnHack);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
@@ -163,6 +219,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnHack;
+        private System.Windows.Forms.TextBox txtMaybeKey;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtHacTxt;
     }
 }
 
